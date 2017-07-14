@@ -1,0 +1,110 @@
+1. TEST 0:  RB_001.  Login For Sanity of Bus Ticketing From Member: testbususer102@gmail.com: Positve Flow | RB Gateway | Contact No. 9717818689, ClientId: 3| 3
+2. TEST 1:  RB_002. Check Bus Availability Version V2. From SourceID:5136,And Destination:7210,On TravelDate:2017-06-20
+3. TEST 2:  RB_003. Check Bus Availability From SourceID:5136,And Destination:7210,On TravelDate:2017-06-20 ; 
+4. TEST 3:  RB_004.  Bus Details for Bus Type  And Operator Service Name Is :  :ScheduleId: For Gateway : 
+5. TEST 4:  TS_001. Login For Sanity of Bus Ticketing From Member: testbususer102@gmail.com: Positve Flow | TS Gateway| Contact No. 9717818689, ClientId: 3
+6. TEST 5:  TS_002. Check Bus Availability Version V2. From SourceID:4961,And Destination:2468,On TravelDate:2017-06-20 | TS Gateway
+7. TEST 6:  TS_003. Check Bus Availability From SourceID:4961,And Destination:2468,On TravelDate:2017-06-20 | TS Gateway
+8. TEST 7:  TS_004.  Bus Details for Bus Type A/C, Sleeper, 2 + 1 And Operator Service Name Is :Navin Travels Hyd :ScheduleId:error For Gateway : 3
+9. TEST 8:  RB_027.Login For Partial Booking sanity Flow  of Bus Ticketing From Member: testbususer102@gmail.com:  | RB Gateway | Contact No. 9717818689, ClientId: 3
+10. TEST 9:  RB_028. Check Bus Availability Version V2. From SourceID:5136,And Destination:7210,On TravelDate:2017-06-20
+11. TEST 10:  RB_029. Check Bus Availability From SourceID:5136,And Destination:7210,On TravelDate:2017-06-20
+12. TEST 11:  RB_030. .Bus Details for Bus Type Leyland A/C Seater/Sleeper Executive Luxury (2+2) And Operator Service Name Is : gajanan :ScheduleId:2 For Gateway : 2
+13. TEST 12:  TS_027.Login For Partial Booking sanity Flow  of Bus Ticketing From Member: testbususer102@gmail.com:  | RB Gateway | Contact No. 9717818689, ClientId: 3
+14. TEST 13:  TS_028. Check Bus Availability Version V2. From SourceID:4961,And Destination:2468,On TravelDate:2017-06-20
+15. TEST 14:  TS_029. Check Bus Availability From SourceID:4961,And Destination:2468,On TravelDate:2017-06-20
+16. TEST 15:  TS_030. .Bus Details for Bus Type A/C, Sleeper, 2 + 1 And Operator Service Name Is : Sri Krishna Travels :ScheduleId:error For Gateway : 3
+17. TEST 16:  Login-API To Test BUS Availability API
+18. TEST 17:  BT_1001 SUCCESS : 2017-06-23 , MemberID:[testbususer102@gmail.com]
+19. TEST 18:  BT_1002 Incorrect Origin ID - FAILURE
+20. TEST 19:  BT_1003 Incorrect Destination  ID- FAILURE
+21. TEST 20:  BT_1004 - Incorrect Date Format -FAILURE
+22. TEST 21:  BT_1005 - Previous Month Date -FAILURE
+23. TEST 22:  BT_1006 SUCCESS For Today's Date: 2017-06-16
+24. TEST 23:  BT_1007 NEXT 2 Month Date -FAILURE TravelDate: 2017-08-15
+25. TEST 24:  BT_1008 NEXT 3 Month Date -FAILURE TravelDate:2017-09-14
+26. TEST 25:  BT_1009 NEXT 6 Month Date -FAILURE TravelDate:2017-12-13
+27. TEST 26:  BT_1010 Service Not available b/w Orgin-Destination
+28. TEST 27:  BT_1011 SUCCESS Without LOGIN
+29. TEST 28:  BT_1012 SUCCESS WIth Invalid Client
+30. TEST 29:  BT_1013 SUCCESS Source and Destination is same
+31. TEST 30:  BT_1014 SUCCESS Source and Destination is invalid not exist
+32. TEST 31:  Login-API To Test BUS Current_Availability API
+33. TEST 32:  1.Check Bus Availability From SourceID5136,And Destination:7210,On TravelDate:2017-06-24
+34. TEST 33:  BT_2001 SUCCESS with Valid Schedule ID
+35. TEST 34:  BT_2001 FAILURE with InValid Schedule ID
+36. TEST 35:  BT_2001 FAILURE with Invalid Schedule ID
+37. TEST 36:  BT_2001 FAILURE with Invalid Booking session
+38. TEST 37:  Login-API to test Tentative API Negative Test Cases
+39. TEST 38:  1.Check Bus Availability From SourceID5025,And Destination:1860,On TravelDate:2017-06-20
+40. TEST 39:  2.Bus Details for Bus Type A/C, Sleeper, 2 + 1 ( 30 ) And Operator Service Name Is : Ambey Travels (Indore) - New Royal Travels Bhopal api/availability/1 2017-06-24
+41. TEST 40:  3001.Tentative_Booking Test Case : FAILURE check Mandatory Parameter "ScheduleId", MemberId : [testbususer102@gmail.com],
+42. TEST 41:  3002. Tentative_Booking Test Case : FAILURE check Mandatory Parameter " Board_Points, 
+43. TEST 42:  3003.Tentative_Booking Test Case : FAILURE check Mandatory Parameter "Drop_Points, 
+44. TEST 43:  3004.Tentative_Booking Test Case : FAILURE Check Mandatory Parameter "Cell_no"
+45. TEST 44:  3005.Tentative_Booking Test Case : FAILURE Check Mandatory Parameter "emergency_contact_no" Now it's non-mandatory
+46. TEST 45:  3006.Tentative_Booking Test Case : FAILURE Check Mandatory Parameter "Title"
+47. TEST 46:  3007.Tentative_Booking Test Case : FAILURE Check Mandatory Parameter "Passanger_name"
+48. TEST 47:  3008.Tentative_Booking Test Case : FAILURE Check Mandatory Parameter "Passanger_age"
+49. TEST 48:  3009.Tentative_Booking Test Case : FAILURE Check Mandatory Parameter "Passanger_gender"
+50. TEST 49:  3010.Tentative_Booking Test Case : FAILURE Check Mandatory Parameter "Passanger_id_Card_issuer"
+51. TEST 50:  3011.Tentative_Booking Test Case : FAILURE Check Mandatory Parameter "Passanger_primary"
+52. TEST 51:  3012.Tentative_Booking Test Case : FAILURE Check Mandatory Parameter "Passanger_Seat"
+53. TEST 52:  3013.Tentative_Booking Test Case : FAILURE with Invalid ScopeID
+54. TEST 53:  3014.Tentative_Booking Test Case : FAILURE with Without ScopeID
+55. TEST 54:  3015.Tentative_Booking Test Case : FAILURE with Blank ScopeID
+56. TEST 55:  3017.Tentative_Booking Test Case : FAILURE If seat is already reserved | BOTH FALSE | Invalid block request - No primary passenger is specified.
+57. TEST 56:  3018.Tentative_Booking Test Case : FAILURE If seat is already reserved
+58. TEST 57:  3019.Tentative_Booking Test Case : IF DOJ is mismatched "doj":"2017-06-18", and TravelDate : 2017-06-20
+59. TEST 58:  3020.Tentative_Booking Test Case : IF Schedule Id is Mismatched in Tentative [5] and Seat Selection API :1
+60. TEST 59:  Login-API to test Confirm API
+61. TEST 60:  1.Check Bus Availability From SourceID5136,And Destination:7210,On TravelDate:2017-06-20
+62. TEST 61:  2.Bus Details for Bus Type Leyland A/C Seater/Sleeper Executive Luxury (2+2) And Operator Service Name Is : gajanan api/availability/1 2017-06-20
+63. TEST 62:  4003.confirm_payment: Invalid ScopeID
+64. TEST 63:  4004.confirm_payment: Without ScopeID
+65. TEST 64:  4005.confirm_payment: Blank ScopeID
+66. TEST 65:  5.Login-API to test Finalise&Confirm API
+67. TEST 66:  1.Check Bus Availability From SourceID:5025,And Destination1860,On TravelDate:2017-06-20
+68. TEST 67:  2.Bus Details for Bus Type A/C, Sleeper, 2 + 1 ( 30 ) And Operator Service Name Is : Ambey Travels (Indore) - New Royal Travels Bhopal api/availability/1 ,2017-06-20
+69. TEST 68:  5002.finalise_booking Test Case : FAILURE check Mandatory Parameter " Board_Points
+70. TEST 69:  5003.finalise_booking Test Case : FAILURE check Mandatory Parameter "Drop_Points
+71. TEST 70:  5004.finalise_booking Test Case : FAILURE Check Mandatory Parameter "Cell_no"
+72. TEST 71:  5007.finalise_booking Test Case : FAILURE Check Mandatory Parameter "Title"
+73. TEST 72:  5008.finalise_booking Test Case : FAILURE Check Mandatory Parameter "Passanger_name"
+74. TEST 73:  5009.finalise_booking Test Case : FAILURE Check Mandatory Parameter "Passanger_age"
+75. TEST 74:  5010.finalise_booking Test Case : FAILURE Check Mandatory Parameter "Passanger_gender"
+76. TEST 75:  5011.finalise_booking Test Case : FAILURE Check Mandatory Parameter "Passanger_id_Card_issuer"
+77. TEST 76:  5012.finalise_booking Test Case : FAILURE Check Mandatory Parameter "Passanger_primary"
+78. TEST 77:  5013.finalise_booking Test Case : FAILURE Check Mandatory Parameter "Passanger_Seat"
+79. TEST 78:  5014.finalise_booking Test Case : FAILURE with Invalid ScopeID
+80. TEST 79:  5015.finalise_booking Test Case : FAILURE with Without ScopeID
+81. TEST 80:  5016.finalise_booking Test Case : FAILURE with Blank ScopeID
+82. TEST 81:  5017. finalise_booking Test Case : IF DOJ is mismatched "doj":"2017-06-18", and TravelDate : 2017-06-20
+83. TEST 82:  5018.finalise_booking Test Case : IF Schedule Id is Mismatched in Tentative [5] and Seat Selection API :1
+84. TEST 83:  Login-API to test View Booking API
+85. TEST 84:  6001.view_booking for Invalid BookingId: Abfadslh12313
+86. TEST 85:  Login-API to test can_cancel Booking API
+87. TEST 86:  Login-API to test Cancel Booking API
+88. TEST 87:  9001.get_booking_history
+89. TEST 88:  CASHPICKUP:Login For Sanity of Bus Ticketing From Member: p2pref1@gmail.com | Not Complete booking Flow.| Contact No. 9717818689, ClientId: 3
+90. TEST 89:  CASHPICKUP:1.1:Check Bus Availability Version V2. From SourceID:5136,And Destination:7210,On TravelDate:2017-06-20
+91. TEST 90:  CASHPICKUP:1 Check Bus Availability From SourceID:5136,And Destination:7210,On TravelDate:2017-06-20
+92. TEST 91:  CASHPICKUP:2.Bus Details for Bus Type Leyland A/C Seater/Sleeper Executive Luxury (2+2) And Operator Service Name Is : gajanan 1 For Gateway : 2| Traveldate:- 2017-06-20
+93. TEST 92:  RatingTC_001. Login For Rating & Review ClientId:3 With | testbususer102@gmail.com | Version v3.2, Amount | 400
+94. TEST 93:  RatingTC_002. Get  user Review Without Login For Booking ID : 3WM09TEBNAZVYQBR
+95. TEST 94:  RatingTC_003. Get  user Review Memberid: testbususer102@gmail.com Booking Id : 3WM09TEBNAZVYQBR
+96. TEST 95:  RatingTC_004. Get  user Review Memberid: testbususer102@gmail.com For Cancelled Booking ID: 2N2VX47WDBF6FSZJ
+97. TEST 96:  RatingTC_005.  Submit user Review With No answers/Comment If Question have answers:Memberid: testbususer102@gmail.com , BookingID 3WM09TEBNAZVYQBR
+98. TEST 97:  RatingTC_006. Submit user Review | Questing have answers but we send blank values.in the CommentMemberid: testbususer102@gmail.com , BookingID 3WM09TEBNAZVYQBR
+99. TEST 98:  RatingTC_007.  Submit user Review With Comment and No Ansewers Memberid: testbususer102@gmail.com , BookingID 3WM09TEBNAZVYQBR
+100. TEST 99:  RatingTC_008. Submit user Review With Multiple answers Memberid: testbususer102@gmail.com , BookingID 3WM09TEBNAZVYQBR
+101. TEST 100:  RatingTC_009.  Submit user Review With Invalid value in the rating. Memberid: testbususer102@gmail.com , BookingID 3WM09TEBNAZVYQBR
+102. TEST 101:  RatingTC_010. Submit user Review With Invalid BookingID. Memberid: testbususer102@gmail.com , BookingID : Testing675AFAD
+103. TEST 102:  RatingTC_011. Submit user Review With Cancelled BookingID. Memberid: testbususer102@gmail.com , BookingID : 2N2VX47WDBF6FSZJ
+104. TEST 103:  RatingTC_012. Submit user Review Without Login
+105. TEST 104:  RatingTC_013. Submit user Review | Only Rating Memberid: testbususer102@gmail.com , BookingID 3WM09TEBNAZVYQBR
+106. TEST 105:  Koins_TC_001.  Login For Sanity of MobiKoins API's and Gift APIs From Member: testbususer102@gmail.com: Positve Flow | RB Gateway
+107. TEST 106:  Koins_TC_002. FetchMbkGift ALL  From Member: testbususer102@gmail.com
+108. TEST 107:  Koins_TC_003. MbkFetchBalance From Member: testbususer102@gmail.com
+109. TEST 108:  Koins_TC_004. Gift locked API From Member: testbususer102@gmail.com
+110. TEST 109:  Koins_TC_005.1. MbkRedeemGift Gift Id : 

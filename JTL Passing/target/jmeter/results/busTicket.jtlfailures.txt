@@ -1,0 +1,17 @@
+1. TEST 1:  RB_002. Check Bus Availability Version V2. From SourceID:5136,And Destination:7210,On TravelDate:2017-06-20
+2. TEST 2:  RB_003. Check Bus Availability From SourceID:5136,And Destination:7210,On TravelDate:2017-06-20 ; 
+3. TEST 3:  RB_004.  Bus Details for Bus Type  And Operator Service Name Is :  :ScheduleId: For Gateway : 
+4. TEST 7:  TS_004.  Bus Details for Bus Type A/C, Sleeper, 2 + 1 And Operator Service Name Is :Navin Travels Hyd :ScheduleId:error For Gateway : 3
+5. TEST 11:  RB_030. .Bus Details for Bus Type Leyland A/C Seater/Sleeper Executive Luxury (2+2) And Operator Service Name Is : gajanan :ScheduleId:2 For Gateway : 2
+6. TEST 15:  TS_030. .Bus Details for Bus Type A/C, Sleeper, 2 + 1 And Operator Service Name Is : Sri Krishna Travels :ScheduleId:error For Gateway : 3
+7. TEST 17:  BT_1001 SUCCESS : 2017-06-23 , MemberID:[testbususer102@gmail.com]
+8. TEST 22:  BT_1006 SUCCESS For Today's Date: 2017-06-16
+9. TEST 27:  BT_1011 SUCCESS Without LOGIN
+10. TEST 32:  1.Check Bus Availability From SourceID5136,And Destination:7210,On TravelDate:2017-06-24
+11. TEST 33:  BT_2001 SUCCESS with Valid Schedule ID
+12. TEST 36:  BT_2001 FAILURE with Invalid Booking session
+13. TEST 56:  3018.Tentative_Booking Test Case : FAILURE If seat is already reserved
+14. TEST 61:  2.Bus Details for Bus Type Leyland A/C Seater/Sleeper Executive Luxury (2+2) And Operator Service Name Is : gajanan api/availability/1 2017-06-20
+15. TEST 91:  CASHPICKUP:2.Bus Details for Bus Type Leyland A/C Seater/Sleeper Executive Luxury (2+2) And Operator Service Name Is : gajanan 1 For Gateway : 2| Traveldate:- 2017-06-20
+16. TEST 106:  Koins_TC_002. FetchMbkGift ALL  From Member: testbususer102@gmail.com
+17. TEST 108:  Koins_TC_004. Gift locked API From Member: testbususer102@gmail.com
